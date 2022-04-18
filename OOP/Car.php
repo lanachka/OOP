@@ -7,10 +7,8 @@
     protected $model;
     protected $speedMax;
     protected $currentSpeed;
-    //protected $unit;
     protected $year;
-    public static $country;
-    public const COUNTRY_GERMANY = 'GERMANY';
+
 
 
     public function __construct($model,$speedMax,$currentSpeed,$year)
@@ -20,16 +18,6 @@
         $this->currentSpeed = $currentSpeed;
         $this->year = $year;
 
-    }
-
-     public static function getCountry()
-    {
-        return self::$country;
-    }
-
-    public static function setCountry($country)
-    {
-        self::$country = $country;
     }
 
      public function start()
@@ -56,13 +44,14 @@
 
      public function down(int $unit)
      {
-         if($this->currentSpeed - $unit > $this->speedMax){
+         if($this->speedMax - $unit < $this->currentSpeed){
              $this->currentSpeed = $this->speedMax;
              return "Еду с максимальной  скоростью" . ' ' .$this->speedMax;
          }else{
-             $this->currentSpeed -=$unit;
-             return 'Еду со скоростью' . ' ' . $this->currentSpeed;
+             $this->speedMax -=$unit;
+             return 'Еду со скоростью' . ' ' . $this->speedMax;
          }
+
      }
 
 
