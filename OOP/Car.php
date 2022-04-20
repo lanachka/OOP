@@ -1,5 +1,5 @@
 <?php
-//include 'MovableInterfase.php';
+
 namespace OOP;
 
  abstract class Car implements MovableInterfase
@@ -8,19 +8,30 @@ namespace OOP;
     protected $speedMax;
     protected $currentSpeed;
     protected $year;
+    //СВОЙСТВО ДЛЯ КОМПОЗИЦИИ
+    protected $vinCode;
+    //СВОЙСТВО ДЛЯ АГРЕГАЦИИ
+    protected $engine;
     protected static $country;
     public const COUNTRY_GERMANY = 'GERMANY';
 
 
-    public function __construct($model,$speedMax,$currentSpeed,$year)
+    public function __construct(Engine $engine, $model, $speedMax, $currentSpeed, $year)
     {
+        $this->engine = $engine;
         $this->model = $model;
         $this->speedMax = $speedMax;
         $this->currentSpeed = $currentSpeed;
         $this->year = $year;
-
-
+        $this->vinCode = new VinCode();
     }
+
+
+     public function move($to, $cargo)
+     {
+         echo 'I am moving to ' . $to . ' with ' . $cargo . PHP_EOL;
+
+     }
 
      public static function getCountry()
      {
@@ -66,4 +77,4 @@ namespace OOP;
 
      }
 
- }
+}

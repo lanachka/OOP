@@ -3,11 +3,14 @@
 use OOP\Car;
 use OOP\Truck;
 use OOP\Bus;
+use OOP\Driver;
+use OOP\Engine;
 
 function autoLoad($className){
     //ДЛЯ ЗАМЕНЫ СЛЕША В ДРУГУЮ СТОРОНУ
     $formatClassName = str_replace('\\','/',$className);
     $fileName = __DIR__ . '/' . $formatClassName . '.php';
+    echo $fileName. PHP_EOL;
     if(file_exists($fileName)){
         include $fileName;
     }
@@ -15,8 +18,9 @@ function autoLoad($className){
 
 spl_autoload_register('autoLoad');
 
-$bus = new Bus('BMW', 150, null, '2015');
-$truck = new Truck('Mercedes', 120, null, '2020');
+$engine = new Engine();
+$bus = new Bus($engine,'BMW', 150, null, '2015');
+$truck = new Truck($engine,'Mercedes', 120, null, '2020');
 
 Car::setCountry(Car::COUNTRY_GERMANY);
 echo Car::getCountry(). PHP_EOL;
