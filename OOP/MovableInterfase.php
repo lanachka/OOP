@@ -1,5 +1,7 @@
 <?php
 
+namespace OOP;
+
 interface MovableInterfase
 {
     /*
