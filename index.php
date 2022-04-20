@@ -10,7 +10,6 @@ function autoLoad($className){
     //ДЛЯ ЗАМЕНЫ СЛЕША В ДРУГУЮ СТОРОНУ
     $formatClassName = str_replace('\\','/',$className);
     $fileName = __DIR__ . '/' . $formatClassName . '.php';
-    echo $fileName. PHP_EOL;
     if(file_exists($fileName)){
         include $fileName;
     }
