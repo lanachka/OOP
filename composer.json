@@ -1,0 +1,16 @@
+{
+    "name": "lana/test-project",
+    "description": "Test project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lana Vlasenko",
+            "email": "lanachka1993@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
