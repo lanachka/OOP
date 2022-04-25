@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53685aeae6a348f68b4bf1bf5b5700fe",
+    "content-hash": "f66e8dc85bf96166e2a24ef6d606922e",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -333,6 +333,43 @@
             "time": "2022-03-24T01:07:58+00:00"
         },
         {
+            "name": "lana/mathematics",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lanachka/mathematics.git",
+                "reference": "2760a3ae73fd73b47c817d6afe8cdcd80fc17083"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lanachka/mathematics/zipball/2760a3ae73fd73b47c817d6afe8cdcd80fc17083",
+                "reference": "2760a3ae73fd73b47c817d6afe8cdcd80fc17083",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mathematics\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lana Vlasenko",
+                    "email": "lanachka1993@gmail.com"
+                }
+            ],
+            "description": "Test package",
+            "support": {
+                "source": "https://github.com/lanachka/mathematics/tree/master",
+                "issues": "https://github.com/lanachka/mathematics/issues"
+            },
+            "time": "2022-04-25T17:17:24+00:00"
+        },
+        {
             "name": "psr/http-client",
             "version": "dev-master",
             "source": {
@@ -610,7 +647,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "lana/mathematics": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

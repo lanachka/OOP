@@ -336,6 +336,46 @@
             "install-path": "../guzzlehttp/psr7"
         },
         {
+            "name": "lana/mathematics",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lanachka/mathematics.git",
+                "reference": "2760a3ae73fd73b47c817d6afe8cdcd80fc17083"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lanachka/mathematics/zipball/2760a3ae73fd73b47c817d6afe8cdcd80fc17083",
+                "reference": "2760a3ae73fd73b47c817d6afe8cdcd80fc17083",
+                "shasum": ""
+            },
+            "time": "2022-04-25T17:17:24+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Mathematics\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lana Vlasenko",
+                    "email": "lanachka1993@gmail.com"
+                }
+            ],
+            "description": "Test package",
+            "support": {
+                "source": "https://github.com/lanachka/mathematics/tree/master",
+                "issues": "https://github.com/lanachka/mathematics/issues"
+            },
+            "install-path": "../lana/mathematics"
+        },
+        {
             "name": "psr/http-client",
             "version": "dev-master",
             "version_normalized": "dev-master",

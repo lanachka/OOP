@@ -1,7 +1,7 @@
 {
-    "name": "lana/test-project",
-    "description": "Test project",
-    "type": "project",
+    "name": "lana/mathematics",
+    "description": "Test package",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -10,8 +10,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "guzzlehttp/guzzle": "^7.0",
-        "lana/mathematics": "dev-master"
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mathematics\\": "src"
+        }
     }
 }
