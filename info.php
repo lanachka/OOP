@@ -1,9 +1,6 @@
 <?php
-function sayHello()
-{
-    echo "Hello";
-    echo "<br>";
-    echo "Glad to see you!!!";
-}
 
-sayHello();
+include __DIR__. '/vendor/autoload.php';
+
+$mathematics = new \Mathematics\Mathematics();
+echo $mathematics->sum(5,4);
