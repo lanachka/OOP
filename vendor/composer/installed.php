@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '8054150cd940200da2c866d427451c6630105ab8',
+        'reference' => '16026534516ec5c8c4b142b8171d733303ab96d8',
         'name' => 'lana/test-project',
         'dev' => true,
     ),
@@ -40,7 +40,18 @@
             'aliases' => array(
                 0 => '2.2.x-dev',
             ),
-            'reference' => '5c693242bede743c23402bc5b9de62da04a882d7',
+            'reference' => '81bf80ec80be343ebe95a056cab5e134e83097c3',
+            'dev_requirement' => false,
+        ),
+        'lana/logger' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../lana/logger',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => 'eddfe063aa45ed410ed7d39e2786d048df132a8b',
             'dev_requirement' => false,
         ),
         'lana/mathematics' => array(
@@ -60,7 +71,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '8054150cd940200da2c866d427451c6630105ab8',
+            'reference' => '16026534516ec5c8c4b142b8171d733303ab96d8',
             'dev_requirement' => false,
         ),
         'psr/http-client' => array(
@@ -113,6 +124,15 @@
             'provided' => array(
                 0 => '1.0',
             ),
+        ),
+        'psr/log' => array(
+            'pretty_version' => '1.1.4',
+            'version' => '1.1.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/log',
+            'aliases' => array(),
+            'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
+            'dev_requirement' => false,
         ),
         'ralouphie/getallheaders' => array(
             'pretty_version' => '3.0.3',

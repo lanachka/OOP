@@ -14,8 +14,13 @@ class ComposerStaticInitdbf7ad05a791044ce87f34ca3081de99
     );
 
     public static $prefixLengthsPsr4 = array (
+        'l' => 
+        array (
+            'logger\\' => 7,
+        ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
         ),
@@ -32,6 +37,14 @@ class ComposerStaticInitdbf7ad05a791044ce87f34ca3081de99
     );
 
     public static $prefixDirsPsr4 = array (
+        'logger\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lana/logger/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',

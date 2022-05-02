@@ -12,6 +12,8 @@
     "minimum-stability": "dev",
     "require": {
         "guzzlehttp/guzzle": "^7.0",
-        "lana/mathematics": "dev-master"
+        "lana/mathematics": "dev-master",
+        "psr/log": "^1.1",
+        "lana/logger": "dev-master"
     }
 }
