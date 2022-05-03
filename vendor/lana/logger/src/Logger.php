@@ -3,7 +3,6 @@
 namespace logger;
 
 use Psr\Log\AbstractLogger;
-//use Psr\Log\LoggerInterface;
 
 
 class Logger extends AbstractLogger
