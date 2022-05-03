@@ -1,0 +1,18 @@
+2022-05-03 22:36:08 ALERT Тyт все  полетело a:0:{}
+2022-05-03 22:36:08 INFO just info a:0:{}
+2022-05-03 22:37:28 ALERT Тyт все  полетело a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:37:28 INFO just info a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:38:40 ALERT Тyт все  полетело a:1:{s:8:"gylhello";s:15:"jhhlhow are you";}
+2022-05-03 22:38:40 INFO just info a:1:{s:9:"hekkkjllo";s:14:"h215ow are you";}
+2022-05-03 22:41:33 ALERT Тyт все  полетело a:1:{s:13:"22235gylhello";s:18:"j111hhlhow are you";}
+2022-05-03 22:41:33 INFO just info a:1:{s:12:"111hekkkjllo";s:14:"h215ow are you";}
+2022-05-03 22:49:15 ALERT Тyт все  полетело a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:49:15 INFO just info a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:51:37 ALERT Тyт все  полетело a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:51:37 INFO just info a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:53:04 EMERGENCY Тyт все  полетело a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:53:04 INFO just info a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:54:15 CRITICAL Тyт все  полетело a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:54:15 INFO just info a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:54:23 CRITICAL Тyт все  полетело a:1:{s:5:"hello";s:11:"how are you";}
+2022-05-03 22:54:23 INFO just info a:1:{s:5:"hello";s:11:"how are you";}
