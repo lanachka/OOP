@@ -8,7 +8,7 @@ use Psr\Log\AbstractLogger;
 
 class Logger extends AbstractLogger
 {
-    private function write($logDate, $logLevel, $message, array $context = []): void
+    private function write($logDate, $logLevel, $message, array $context = array())
     {
         $filePath = __DIR__. '/';
         $fileName = 'log.txt';
@@ -17,7 +17,7 @@ class Logger extends AbstractLogger
         file_put_contents($filePath . $fileName,$logStr, FILE_APPEND );
     }
 
-    private function format($logDate, $logLevel, $message, array $context = []): array
+    private function format($logDate, $logLevel, $message, array $context = array())
     {
         $logInfo = [];
         $logInfo['logDate'] = $logDate;
